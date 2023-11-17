@@ -33,8 +33,13 @@ https://github.com/dportik
 Updated October 2020
 """
 from itertools import product
+import logging
 
 import dadi
+
+
+logging.basicConfig(level=logging.INFO)
+logger = logging.getLogger(__name__)
 
 
 def run_projections(dd, pop_ids, polarized, maxproj, min_frac):
